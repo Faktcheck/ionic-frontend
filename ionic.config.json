@@ -1,0 +1,7 @@
+{
+  "name": "factCheck",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}

@@ -1,68 +1,207 @@
 <template>
   <ion-page>
-    <ion-header :translucent="true">
+    <ion-header>
       <ion-toolbar>
-        <ion-title>Blank</ion-title>
+        <ion-title class="ion-text-center"> Faktcheck </ion-title>
+      </ion-toolbar>
+      <ion-toolbar>
+        <ion-grid>
+          <ion-row>
+            <ion-col
+              size-lg="6"
+              offset-lg="3"
+              class="ion-jusitfy-content-center"
+            >
+              <ion-searchbar
+                placeholder="Bitte Suchbegriff eingeben"
+              ></ion-searchbar>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
       </ion-toolbar>
     </ion-header>
-    
-    <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title size="large">Blank</ion-title>
-        </ion-toolbar>
-      </ion-header>
-    
-      <div id="container">
-        <strong>Ready to create an app?</strong>
-        <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-      </div>
+    <ion-content fullscreen>
+      <ion-grid>
+        <ion-row>
+          <ion-col size-lg="6" offset-lg="3" class="ion-justify-content-center">
+            <ion-list>
+              <ion-item lines="none">
+                <ion-card class="centeredCard">
+                  <ion-card-header>
+                    <ion-card-subtitle>
+                      Outlet - e.g. Volksverpetzer
+                    </ion-card-subtitle>
+                    <ion-card-title>Beispielüberschrift</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                    <ion-button size="small" color="primary"
+                      >Coronavirus</ion-button
+                    >
+                    <ion-button size="small" color="secondary"
+                      >Wodarg</ion-button
+                    >
+                    <ion-button size="small" color="tertiary"
+                      >Bhakdi</ion-button
+                    >
+                    <div class="card-text">
+                      Keep close to Nature's heart... and break clear away, once
+                      in awhile, and climb a mountain or spend a week in the
+                      woods. Wash your spirit clean.
+                    </div>
+                    <ion-button
+                      href="https://www.volksverpetzer.de/corona/stanford-ioannidis-covid/"
+                      target="_blank"
+                      size="big"
+                      color="primary"
+                      strong
+                      expand="full"
+                      >Zum Artikel</ion-button
+                    >
+                  </ion-card-content>
+                </ion-card>
+              </ion-item>
+
+              <ion-item lines="none">
+                <ion-card class="centeredCard">
+                  <ion-card-header>
+                    <ion-card-subtitle>
+                      Outlet - e.g. Volksverpetzer
+                    </ion-card-subtitle>
+                    <ion-card-title>Beispielüberschrift</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                    <ion-button size="small" color="warning"
+                      >querdenker</ion-button
+                    >
+                    <ion-button size="small" color="danger"
+                      >Lockdown</ion-button
+                    >
+                    <ion-button size="small" color="light"
+                      >Impfstoff</ion-button
+                    >
+                    <div class="card-text">
+                      Keep close to Nature's heart... and break clear away, once
+                      in awhile, and climb a mountain or spend a week in the
+                      woods. Wash your spirit clean.
+                    </div>
+                    <ion-button
+                      href="https://www.volksverpetzer.de/corona/stanford-ioannidis-covid/"
+                      target="_blank"
+                      size="big"
+                      color="primary"
+                      strong
+                      expand="full"
+                      >Zum Artikel</ion-button
+                    >
+                  </ion-card-content>
+                </ion-card>
+              </ion-item>
+
+              <ion-item lines="none">
+                <ion-card class="centeredCard">
+                  <ion-card-header>
+                    <ion-card-subtitle>
+                      Outlet - e.g. Volksverpetzer
+                    </ion-card-subtitle>
+                    <ion-card-title>Beispielüberschrift</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                    <ion-button size="small" color="light"
+                      >Impfstoff</ion-button
+                    >
+                    <ion-button size="small" color="medium">Maske</ion-button>
+                    <ion-button size="small" color="dark">MNS</ion-button>
+                    <div class="card-text">
+                      Keep close to Nature's heart... and break clear away, once
+                      in awhile, and climb a mountain or spend a week in the
+                      woods. Wash your spirit clean.
+                    </div>
+                    <ion-button
+                      href="https://www.volksverpetzer.de/corona/stanford-ioannidis-covid/"
+                      target="_blank"
+                      size="big"
+                      color="primary"
+                      strong
+                      expand="full"
+                      >Zum Artikel</ion-button
+                    >
+                  </ion-card-content>
+                </ion-card>
+              </ion-item>
+            </ion-list>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </ion-content>
   </ion-page>
 </template>
 
 <script lang="ts">
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
-import { defineComponent } from 'vue';
+import {
+  IonHeader,
+  IonGrid,
+  IonRow,
+  IonCol,
+  IonContent,
+  IonPage,
+  IonTitle,
+  IonToolbar,
+  IonSearchbar,
+  IonList,
+  IonItem,
+  IonCard,
+  IonCardHeader,
+  IonCardSubtitle,
+  IonCardContent,
+  IonCardTitle,
+  IonButton,
+} from "@ionic/vue";
+import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: 'Home',
+  name: "Home",
   components: {
-    IonContent,
     IonHeader,
+    IonGrid,
+    IonRow,
+    IonCol,
+    IonContent,
     IonPage,
     IonTitle,
-    IonToolbar
-  }
+    IonToolbar,
+    IonSearchbar,
+    IonList,
+    IonItem,
+    IonCard,
+    IonCardHeader,
+    IonCardSubtitle,
+    IonCardContent,
+    IonCardTitle,
+    IonButton,
+  },
 });
 </script>
 
 <style scoped>
-#container {
-  text-align: center;
-  
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+.centeredCard {
+  margin-left: auto;
+  margin-right: auto;
 }
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.list-md {
+  background: transparent;
 }
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-  
-  color: #8c8c8c;
-  
-  margin: 0;
+ion-item {
+  --background: transparent;
 }
-
-#container a {
-  text-decoration: none;
+ion-searchbar {
+  padding-left: 16px;
+  padding-right: 16px;
+  --icon-color: #121212;
+  --placeholder-color: #121212;
+  --color: #121212;
+}
+.card-text {
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 </style>

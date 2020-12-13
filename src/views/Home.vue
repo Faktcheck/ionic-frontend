@@ -38,7 +38,7 @@
                       >Coronavirus</ion-button
                     >
                     <ion-button size="small" color="secondary"
-                      >Wodarg</ion-button
+                      >Hurensohn</ion-button
                     >
                     <ion-button size="small" color="tertiary"
                       >Bhakdi</ion-button
